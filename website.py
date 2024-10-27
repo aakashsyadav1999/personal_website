@@ -5,11 +5,16 @@ from streamlit_lottie import st_lottie
 # ---Title---
 st.set_page_config(page_title="Welcome", page_icon=":shark:", layout="wide")
 
+
+
 with st.container():
     # ---Subheader---
     st.title("Hello! My name is Aakash Yadav :wave:")
     # ---About Me---
     st.write("I am a full stack AI/ML Developer with a passion for creating innovative solutions. Here are some of my key skills and tools:")
+    
+    #Display Profile Image
+    #st.image(r"D:\vscode\personal_website\Image.jpg", caption="Aakash Yadav", width=150)
 
     def load_lottie(url):
         r = requests.get(url)
@@ -30,18 +35,14 @@ left_column, right_column = st.columns(2)
 with left_column:
     st.header("What I do")
     st.write("""
-    - As a full stack AIML developer, you possess a diverse skill set that spans both the development of machine learning models and their deployment.
-    - Creating machine learning models typically includes data preprocessing, feature engineering, model selection, training, and evaluation.
-    - You likely use popular libraries such as TensorFlow, PyTorch, or scikit-learn for these tasks.
-    - Once the models are trained and evaluated, the next step is deployment.
-    - Deployment often involves setting up virtual machines (VMs) on cloud platforms like AWS, Azure, or Google Cloud.
-    - You configure these VMs to host your models, ensuring they are scalable and can handle real-time predictions.
-    - Tools like Docker and Kubernetes are commonly used to containerize and orchestrate these deployments, providing a robust and flexible environment for your applications.
-    - Additionally, you create end-to-end pipelines for machine learning prediction models.
-    - These pipelines automate the workflow from data ingestion to model training, evaluation, and deployment.
-    - Tools like Apache Airflow, Kubeflow, and MLflow are instrumental in building these pipelines, allowing for continuous integration and continuous deployment (CI/CD) of machine learning models.
-    - In summary, your expertise lies in not only developing sophisticated machine learning models but also in deploying them efficiently and creating automated pipelines that ensure seamless operation and scalability.
-    - This combination of skills is crucial for delivering robust and reliable AI solutions in a production environment.
+    - **Machine Learning & AI Expertise**: Skilled in designing, training, and deploying machine learning algorithms and models using Python, TensorFlow, and PyTorch, as well as leveraging ChatGPT API and Google Gemini Vision Pro for advanced AI applications.
+    - **Data Preparation & Processing**: Experienced in collecting, cleaning, and preprocessing large datasets, enabling high-quality analysis and training for accurate model outcomes.
+    - **End-to-End Model Deployment**: Proficient in deploying machine learning models in production, ensuring performance optimization and scalability for real-world applications.
+    - **Collaborative Problem-Solving**: Work effectively with cross-functional teams to understand and meet project requirements, delivering solutions tailored to specific industry needs.
+    - **Continuous Learning**: Actively stay updated with the latest advancements in AI and ML to ensure projects benefit from cutting-edge technologies and methodologies.
+    - **Adaptable Across Industries**: Successfully applied AI/ML solutions across sectors, tackling challenges from predictive analytics to natural language processing and beyond.
+    - **Hands-On Approach**: Known for a practical, hands-on approach, delivering results-oriented solutions that meet both technical and business objectives.
+    - **Tech-Savvy with Practical Insights**: Utilize technical knowledge to streamline workflows and enhance the AI/ML pipeline, improving model accuracy and operational efficiency.
     """)
 
 with right_column:
@@ -63,59 +64,50 @@ left_column, right_column = st.columns(2)
 
 with left_column:
     # Divider
-    st.write("---")
     st.header("My Skills")
     st.write("""
-    - Programming Languages: Python
-    - Machine Learning Libraries: TensorFlow, PyTorch, scikit-learn, XGBoost, LightGBM
-    - Data Processing Libraries: Pandas, NumPy, Dask, Vaex
-    - Data Visualization Libraries: Matplotlib, Seaborn, Plotly
-    - Deep Learning Frameworks: TensorFlow, PyTorch, Keras, Fastai, ONNX, OpenCV, Scikit-image, CNN, RNN, LSTM, GAN, Transformer
-    - Cloud Platforms: AWS, Azure, Google Cloud
-    - Containerization: Docker, Kubernetes, Prefect, DVC
-    - Workflow Automation: Apache Airflow, Kubeflow, MLflow
-    - Web Development: streamlit, Flask, Django
-    - Databases: SQL, NoSQL
-    - Version Control: Git, GitHub, GitLab, Bitbucket, Azure DevOps
-    - Operating Systems: Linux, Windows
-    - Soft Skills: Problem-Solving, Communication, Teamwork, Time Management, Adaptability, Creativity, Leadership, Critical Thinking, Decision Making
+    - **Programming Languages**: Python
+    - **Machine Learning Libraries**: TensorFlow, PyTorch, scikit-learn, XGBoost, LightGBM
+    - **Data Processing Libraries**: Pandas, NumPy, Dask, Vaex
+    - **Data Visualization Libraries**: Matplotlib, Seaborn, Plotly
+    - **Deep Learning Frameworks**: TensorFlow, PyTorch, Keras, Fastai, ONNX, OpenCV, Scikit-image, CNN, RNN, LSTM, GAN, Transformer
+    - **Cloud Platforms**: AWS, Azure, Google Cloud
+    - **Containerization**: Docker, Kubernetes, Prefect, DVC
+    - **Workflow Automation**: Apache Airflow, Kubeflow, MLflow
+    - **Web Development**: streamlit, Flask, Django
+    - **Databases**: SQL, NoSQL
+    - **Version Control**: Git, GitHub, GitLab, Bitbucket, Azure DevOps
+    - **Operating Systems**: Linux, Windows
+    - **Soft Skills**: Problem-Solving, Communication, Teamwork, Time Management, Adaptability, Creativity, Leadership, Critical Thinking, Decision Making
     """)
     with right_column:
-        st.write('---')
+
         st.write('')
         st.write('')
         st.write('')
         st.write('')
         st.write('')
-        st.write('')
-        st_lottie(load_lottie(my_skill), height=300, key="skills")
+        st_lottie(load_lottie(my_skill), height=300, key="my_sskills")
 
 
 with left_column:
     # Divider
-    st.write("---")
     st.header("Projects")
     st.write("""
-    - Programming Languages: Python
-    - Machine Learning Libraries: TensorFlow, PyTorch, scikit-learn, XGBoost, LightGBM
-    - Data Processing Libraries: Pandas, NumPy, Dask, Vaex
-    - Data Visualization Libraries: Matplotlib, Seaborn, Plotly
-    - Deep Learning Frameworks: TensorFlow, PyTorch, Keras, Fastai, ONNX, OpenCV, Scikit-image, CNN, RNN, LSTM, GAN, Transformer
-    - Cloud Platforms: AWS, Azure, Google Cloud
-    - Containerization: Docker, Kubernetes, Prefect, DVC
-    - Workflow Automation: Apache Airflow, Kubeflow, MLflow
-    - Web Development: streamlit, Flask, Django
-    - Databases: SQL, NoSQL
-    - Version Control: Git, GitHub, GitLab, Bitbucket, Azure DevOps
-    - Operating Systems: Linux, Windows
-    - Soft Skills: Problem-Solving, Communication, Teamwork, Time Management, Adaptability, Creativity, Leadership, Critical Thinking, Decision Making
+    - **[Dog-Breed-Classifier](https://github.com/aakashsyadav1999/Dog-Breed-Classifier.git):** A deep learning CNN model to predict dog breeds from images.
+    
+    - **[Store-Item-Demand-Forecasting-Challenge](https://github.com/aakashsyadav1999/Store-Item-Demand-Forecasting-Challenge):** Tracks the sales of store and items to forecast future sales.
+    
+    - **[Healthcare Summarizer](https://github.com/aakashsyadav1999/Healthcare.git):** Predicts the length of stay of a patient in a hospital. 
+    
+    - **[Hotel-Reservations](https://github.com/aakashsyadav1999/Hotel-Reservations-Dataset-mlflow.git):** Predicts which type of customer will cancel their hotel reservation.
+    
+    - **[Text Classification END-TO-END](https://github.com/aakashsyadav1999/Text_Classification-END-END.git):** An NLP project for end-to-end text classification and categorization.
     """)
     with right_column:
-        st.write('---')
         st.write('')
         st.write('')
         st.write('')
         st.write('')
         st.write('')
-        st.write('')
-        st_lottie(load_lottie(my_skill), height=300, key="skills")
+        st_lottie(load_lottie(project), height=300, key="projects")
